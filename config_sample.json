@@ -1,0 +1,18 @@
+{
+    "REDIRECT_URI": "http://localhost:3000/redirect",
+    "APPINSIGHTS_KEY": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "mysql_pool_info": {
+        "connectionLimit": 10,
+        "host": "xxxx",
+        "user": "xxxx",
+        "password": "xxxx",
+        "database": "xxxx"
+    },
+    "msal_config": {
+        "auth": {
+            "clientId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            "authority": "https://login.microsoftonline.com/common",
+            "clientSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+    }
+}
