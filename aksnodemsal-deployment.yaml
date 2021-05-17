@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aksnodemsal-deployment
+  labels:
+    app: aksnodemsal
+spec:
+  selector:
+    matchLabels:
+      app: aksnodemsal
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: aksnodemsal
+    spec:
+      containers:
+        - name: aksnodemsal
+          image: chmald/aksnodemsal:v1
+          ports:
+          - containerPort: 8080
