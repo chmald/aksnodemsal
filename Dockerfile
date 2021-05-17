@@ -22,9 +22,9 @@ RUN chmod 755 /bin/init_container.sh
 
 # App Specific Commands
 WORKDIR /usr/src/app
-COPY package*.json ./
+COPY app/package*.json ./
 RUN npm install
-COPY . .
+COPY app/. .
 
 ENV SSH_PORT 2222
 ENV PORT 8080

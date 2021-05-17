@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: aksnodemsal
-          image: chmald/aksnodemsal:v1
+          image: chmald/aksnodemsal:v1.1
           ports:
           - containerPort: 8080
